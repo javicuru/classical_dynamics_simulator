@@ -21,9 +21,9 @@ T = .7  # duration of the whole simulation [s]
 n = int(T / dt)
 
 fx = -A * m * w**2 * np.sin([w * i * dt for i in range(n)])
-fy = 0
+fy = [0] * n
 
-simulator = CDS(dt, T, x0, y0, vx0, vy0, fx, fy, m)
+simulator = CDS(dt, x0, y0, vx0, vy0, fx, fy, m)
 
 simulator.simulate()
 

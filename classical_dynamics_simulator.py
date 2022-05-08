@@ -5,10 +5,6 @@ given its initial position and velocity, and the input force at every time.
 
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-# from matplotlib import animation
-# from matplotlib.animation import PillowWriter
-# from matplotlib.patches import Arrow
-# import networkx as nx
 import numpy as np
 
 
